@@ -42,12 +42,12 @@ export default function Home() {
     <div className=' text-sm' style={{ background:"linear-gradient(to right,white,skyblue)"}}>
     <Navbar></Navbar>
 
-    <div className=' ' >
+    <div className='shadow-2xl ' >
         <div className=' '><Image height={600} src={dataCenter3}></Image></div>
     </div>
 
     <div style={{ padding:"20px",display : "flex",justifyContent:"center" }}>
-      <div style={{ padding:"20px",width:"80%",background:"linear-gradient(to right,white,skyblue)" }}>
+      <div className='shadow-2xl' style={{ padding:"20px",width:"80%",background:"linear-gradient(to right,white,skyblue)" }}>
         <h1 className=' text-3xl'>Italian Manufacturing for
 High-End Fashion Brands</h1>
 <h3 className=' text-xl'>Produce high-end, Made in Italy clothing,
@@ -60,7 +60,7 @@ of 100+ highly-vetted manufacturers.</h3>
     </div>
 
     <div style={{display : 'flex',justifyContent:"center",alignItems:"center",background:"linear-gradient(to right,white,skyblue)"}}>
-        <div className='p-5' style={{ display : "flex",flexDirection:"column",justifyContent:"center",alignItems:"center",width:"80%",textAlign:"center",background:"linear-gradient(to right,white,skyblue)"}}>
+        <div className='p-5 shadow-2xl' style={{ display : "flex",flexDirection:"column",justifyContent:"center",alignItems:"center",width:"80%",textAlign:"center",background:"linear-gradient(to right,white,skyblue)"}}>
           <h2 className=' text-2xl' style={{ font:"bold" }}>Storied craftsmanship. Transformative technology.</h2>
           <h3 className=' text-xl' style={{ opacity : "0.8",position:"relative" }}>Effortlessly manage a 21st century manufacturing
 pipeline with third and fourth generation Italian artisans.</h3>
@@ -68,7 +68,7 @@ pipeline with third and fourth generation Italian artisans.</h3>
     </div>
 
     <div style={{ marginTop:"20px",display : "flex",flexDirection:"column",alignItems:"center" ,justifyContent:"center",alignItems : "center" }}>
-      <div className='p-5' style={{ display : "flex",flexDirection:"column",alignItems:"center" ,justifyContent:"center",width:"80%",background:"linear-gradient(to right,white,skyblue)"}}>
+      <div className='p-5 shadow-2xl' style={{ display : "flex",flexDirection:"column",alignItems:"center" ,justifyContent:"center",width:"80%",background:"linear-gradient(to right,white,skyblue)"}}>
       <h2 className=' text-2xl'>Envision Digital Transformation with Limitless and Endless Possibilities</h2>
     <div className=' text-xl sm:flex-row flex-col flex' style={{ display : 'flex',alignItems : 'center' ,justifyContent:"center" }}>
       <div style={{ margin:"20px",display : "flex",alignItems : 'center' ,justifyContent:"center",flexDirection:"column" }}>
@@ -92,7 +92,7 @@ pipeline with third and fourth generation Italian artisans.</h3>
     </div>
 
     <div style={{ marginTop:"20px",display : 'flex',alignItems : 'center' ,justifyContent:"center", flexDirection:"column",background:"linear-gradient(to right,white,skyblue)"}}>
-      <div className='p-5' style={{ display : "flex",flexDirection:"column",alignItems:"center" ,justifyContent:"center",width:"80%" ,background:"linear-gradient(to right,white,skyblue)" }}>
+      <div className='p-5 shadow-2xl' style={{ display : "flex",flexDirection:"column",alignItems:"center" ,justifyContent:"center",width:"80%" ,background:"linear-gradient(to right,white,skyblue)" }}>
       <h2 className=' text-2xl' style={{ textDecoration:"underline"  }}>Our Commitment:</h2>
       <br></br>
       <p>We provide the best, practical ecosystem, and most efficient infrastructure, to support all users to develop their visions.</p>
@@ -100,7 +100,7 @@ pipeline with third and fourth generation Italian artisans.</h3>
     </div>
 
     <div style={{ marginTop : "10px",display : 'flex',alignItems : 'center' ,justifyContent:"center", flexDirection:"column"}}>
-    <div className='p-5' style={{ display : "flex",flexDirection:"column",alignItems:"center" ,justifyContent:"center",width:"80%" ,background:"linear-gradient(to right,white,skyblue)" }}>
+    <div className='p-5 shadow-2xl' style={{ display : "flex",flexDirection:"column",alignItems:"center" ,justifyContent:"center",width:"80%" ,background:"linear-gradient(to right,white,skyblue)" }}>
     <h2 className=' text-2xl' style={{ textDecoration:"underline"  }}>
 VARIOUS PRODUCTS AND SOLUTIONS:</h2>
     <div className=' flex-col lg:flex-row' style={{ display : "flex", alignItems : "center" }}>
@@ -131,7 +131,7 @@ VARIOUS PRODUCTS AND SOLUTIONS:</h2>
     </div>
 
     <div style={{marginTop : "20px",display : "flex",flexDirection:"column",alignItems:"center" ,justifyContent:"center",alignItems : "center" }}>
-     <div className='p-5' style={{ width:"80%",background:"linear-gradient(to right,white,skyblue)" }}>
+     <div className='p-5 shadow-2xl' style={{ width:"80%",background:"linear-gradient(to right,white,skyblue)" }}>
       <h2 className=' text-2xl' style={{ textAlign:"center" }}>INQUIRY OF OUR PRODUCTS & SERVICES
 Our Support Team Member Will Be Ready to Help You</h2>
 <div className=' flex-col lg:flex-row mt-4' style={{display:"flex",alignItems:"center" ,justifyContent:"center"}}>
@@ -156,7 +156,7 @@ Our Support Team Member Will Be Ready to Help You</h2>
     </div>
 
     <div style={{ marginTop : "20px",display : "flex",flexDirection:"column",alignItems:"center" ,justifyContent:"center" }}>
-      <div className='p-5' style={{ width:"80%",display : "flex",flexDirection:"column",alignItems:"center" ,justifyContent:"center",background:"linear-gradient(to right,white,skyblue)" }}>
+      <div className='p-5 shadow-2xl' style={{ width:"80%",display : "flex",flexDirection:"column",alignItems:"center" ,justifyContent:"center",background:"linear-gradient(to right,white,skyblue)" }}>
         <h3 className=' text-2xl'>Or leave your contact information and we will contact you...</h3>
         <div className=' flex-col lg:flex-row' style={{ display : 'flex',alignItems:"center" }}>
           <div style={{ margin:"20px" }}>
