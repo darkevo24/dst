@@ -92,7 +92,7 @@ export default function Home() {
       <div className='p-5 shadow-2xl' style={{ display : "flex",flexDirection:"column",alignItems:"center" ,justifyContent:"center",width:"80%" ,background:"linear-gradient(to right,white,skyblue)" }}>
       <h2 className=' text-2xl' style={{ textDecoration:"underline"  }}>Our Commitment:</h2>
       <br></br>
-      <p className=' text-lg'>We provide the best, practical ecosystem, and most efficient infrastructure, to support all users to develop their visions.</p>
+      <p className=' text-lg text-center'>We provide the best, practical ecosystem, and most efficient infrastructure, to support all users to develop their visions.</p>
     </div>
     </div>
 

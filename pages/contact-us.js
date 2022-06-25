@@ -15,7 +15,7 @@ export default function contactUs() {
             <Navbar></Navbar>
     <div className=' flex flex-col items-center mt-10 p-5'>
       <p className=' text-4xl font-bold shadow-2xl'>Contact Us</p>
-      <p className='mt-5'>If You Got Any Questions Please Do Not Hesitate To Send Us a Message</p>
+      <p className='mt-5 text-center'>If You Got Any Questions Please Do Not Hesitate To Send Us a Message</p>
       <div className=' flex lg:flex-row flex-col items-center justify-center'>
         <div className=' m-10 hover:bg-blue-500 cursor-pointer shadow-2xl'>
           <Image width={x} height={x} src={email}></Image>

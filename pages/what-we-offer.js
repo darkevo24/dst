@@ -12,7 +12,7 @@ export default function whatWeOffer() {
         <Navbar></Navbar>
         <div className=' mt-10 flex flex-col items-center'>
             <p className=' text-4xl font-bold'>What We offer</p>
-            <div className=' flex mt-5 items-center justify-center'>
+            <div className=' flex mt-5 items-center justify-center lg:flex-row flex-col'>
                 <div className='m-10 hover:bg-blue-400 cursor-pointer rounded-full shadow-2xl'>
                     <Image src={data}></Image>
                 </div>
