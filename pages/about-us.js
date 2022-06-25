@@ -9,7 +9,7 @@ import Footer from './footer'
 
 export default function AboutUs() {
   return (
-    <div>
+    <div style={{ fontFamily:"Poppins" }}>
         <Navbar ></Navbar>
 
     <div className=' flex items-center'>

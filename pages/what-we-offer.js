@@ -8,7 +8,7 @@ import Footer from './footer'
 
 export default function whatWeOffer() {
   return (
-    <div>
+    <div style={{ fontFamily:"Poppins" }}>
         <Navbar></Navbar>
         <div className=' mt-10 flex flex-col items-center'>
             <p className=' text-4xl font-bold'>What We offer</p>

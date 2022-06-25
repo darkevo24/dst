@@ -18,12 +18,12 @@ import dst from "../../images/DST.png"
 const Navbar = () => {
 
   return (
-    <div>
+    <div style={{ fontFamily:"Poppins" }}>
       
 <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
 <div class="container flex flex-wrap justify-between items-center mx-auto">
 <a href="/" class="flex items-center">
-  <Image src={dst} width={60} height={60}></Image>
+  <Image src={dst} width={100} height={100}></Image>
 </a>
 <button onClick={function(){
   document.getElementsByClassName("mobile")[0].classList.toggle("hidden");

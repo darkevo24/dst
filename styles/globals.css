@@ -13,6 +13,11 @@ body {
     animation: fade-left;
     animation-duration: 2s;
 }
+.openn {
+    animation : openn;
+    animation-duration: 2s;
+
+}
 @keyframes fade-right {
     from {
         transform: translateX(100%);
@@ -27,5 +32,13 @@ body {
     }
     to {
         transform: translateX(0%);
+    }
+}
+@keyframes openn {
+    from {
+        transform :scale(0%);
+    }
+    to {
+        transform :scale(100%);
     }
 }

@@ -11,7 +11,7 @@ export default function contactUs() {
   const [y,setY] = useState(150);
   const [z,setZ] = useState(150);
   return (
-    <div>
+    <div style={{ fontFamily:"Poppins" }}>
             <Navbar></Navbar>
     <div className=' flex flex-col items-center mt-10 p-5'>
       <p className=' text-4xl font-bold shadow-2xl'>Contact Us</p>

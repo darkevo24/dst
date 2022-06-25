@@ -27,7 +27,11 @@ import { Component } from "react";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Footer from './footer'
+import { useRouter } from 'next/router'
+import img2 from "../images/data-center02.jpg"
+
 export default function Home() {
+  const router = useRouter();
   const settings = {
     dots: true,
     infinite: true,
@@ -39,32 +43,25 @@ export default function Home() {
     cssEase: "linear"
   };
   return (
-    <div className=' text-sm' style={{ background:"linear-gradient(to right,white,skyblue)"}}>
+    <div className=' text-sm' style={{ background:"linear-gradient(to right,white,skyblue)",fontFamily:"Poppins"}}>
     <Navbar></Navbar>
 
-    <div className='shadow-2xl ' >
-        <div className=' '><Image height={600} src={dataCenter3}></Image></div>
+    <div className='shadow-2xl' >
+        <div className='openn'>
+          <Image height={600} src={dataCenter3}></Image>
+        </div>
     </div>
 
     <div style={{ padding:"20px",display : "flex",justifyContent:"center" }}>
-      <div className='shadow-2xl' style={{ padding:"20px",width:"80%",background:"linear-gradient(to right,white,skyblue)" }}>
-        <h1 className=' text-3xl'>Italian Manufacturing for
-High-End Fashion Brands</h1>
-<h3 className=' text-xl'>Produce high-end, Made in Italy clothing,
-shoes, and handbags with a network
-of 100+ highly-vetted manufacturers.</h3>
-<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-3">
-  Button
+      <div className='shadow-2xl flex flex-col items-center' style={{ padding:"20px",width:"80%",background:"linear-gradient(to right,white,skyblue)" }}>
+        <h1 className=' text-3xl text-center'>Welcome to DST</h1>
+<h3 className=' text-xl text-center'>Your Neighborhood Data Storage Solution</h3>
+<button onClick={function(){
+    router.push("/about-us");
+}} class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-3">
+  More Information
 </button>
       </div>
-    </div>
-
-    <div style={{display : 'flex',justifyContent:"center",alignItems:"center",background:"linear-gradient(to right,white,skyblue)"}}>
-        <div className='p-5 shadow-2xl' style={{ display : "flex",flexDirection:"column",justifyContent:"center",alignItems:"center",width:"80%",textAlign:"center",background:"linear-gradient(to right,white,skyblue)"}}>
-          <h2 className=' text-2xl' style={{ font:"bold" }}>Storied craftsmanship. Transformative technology.</h2>
-          <h3 className=' text-xl' style={{ opacity : "0.8",position:"relative" }}>Effortlessly manage a 21st century manufacturing
-pipeline with third and fourth generation Italian artisans.</h3>
-        </div>
     </div>
 
     <div style={{ marginTop:"20px",display : "flex",flexDirection:"column",alignItems:"center" ,justifyContent:"center",alignItems : "center" }}>
@@ -95,7 +92,7 @@ pipeline with third and fourth generation Italian artisans.</h3>
       <div className='p-5 shadow-2xl' style={{ display : "flex",flexDirection:"column",alignItems:"center" ,justifyContent:"center",width:"80%" ,background:"linear-gradient(to right,white,skyblue)" }}>
       <h2 className=' text-2xl' style={{ textDecoration:"underline"  }}>Our Commitment:</h2>
       <br></br>
-      <p>We provide the best, practical ecosystem, and most efficient infrastructure, to support all users to develop their visions.</p>
+      <p className=' text-lg'>We provide the best, practical ecosystem, and most efficient infrastructure, to support all users to develop their visions.</p>
     </div>
     </div>
 
@@ -104,20 +101,50 @@ pipeline with third and fourth generation Italian artisans.</h3>
     <h2 className=' text-2xl' style={{ textDecoration:"underline"  }}>
 VARIOUS PRODUCTS AND SOLUTIONS:</h2>
     <div className=' flex-col lg:flex-row' style={{ display : "flex", alignItems : "center" }}>
-      <div style={{ margin:"20px" }}>
-        <Image width={200} height={200} src={ups}></Image>
-      </div>
-      <div style={{ margin:"20px" }}>
-        <Image width={200} height={200} src={rack}></Image>
-      </div>
-      <div style={{ margin:"20px" }}>
-        <Image width={200} height={200} src={cctv}></Image>
-      </div>
-      <div style={{ margin:"20px" }}>
+      <div onMouseOver={function(){
+          document.getElementsByClassName("price")[0].classList.remove("hidden");
+      }} 
+      onMouseOut={function(){
+        document.getElementsByClassName("price")[0].classList.add("hidden");
+      }}
+      className=' ' style={{ margin:"20px" }}>
         <Image width={200} height={200} src={cable}></Image>
+        <div className='bg-white absolute w-40 h-10 hidden price flex items-center justify-center'>
+          <p>Price :20.000 IDR</p>
+        </div>
       </div>
-      <div style={{ margin:"20px" }}>
-        <Image width={200} height={200} src={cloud}></Image>
+      <div onMouseOver={function(){
+          document.getElementsByClassName("price")[1].classList.remove("hidden");
+      }} 
+      onMouseOut={function(){
+        document.getElementsByClassName("price")[1].classList.add("hidden");
+      }} style={{ margin:"20px" }}>
+        <Image width={200} height={200} src={rack}></Image>
+        <div className='bg-white absolute w-40 h-10 hidden price flex items-center justify-center'>
+          <p>Price :20.000 IDR</p>
+        </div>
+      </div>
+      <div onMouseOver={function(){
+          document.getElementsByClassName("price")[2].classList.remove("hidden");
+      }} 
+      onMouseOut={function(){
+        document.getElementsByClassName("price")[2].classList.add("hidden");
+      }} style={{ margin:"20px" }}>
+        <Image width={200} height={200} src={cctv}></Image>
+        <div className='bg-white absolute w-40 h-10 hidden price flex items-center justify-center'>
+          <p>Price :20.000 IDR</p>
+        </div>
+      </div>
+      <div onMouseOver={function(){
+          document.getElementsByClassName("price")[3].classList.remove("hidden");
+      }} 
+      onMouseOut={function(){
+        document.getElementsByClassName("price")[3].classList.add("hidden");
+      }} style={{ margin:"20px" }}>
+        <Image width={200} height={200} src={ups}></Image>
+        <div className='bg-white absolute w-40 h-10 hidden price flex items-center justify-center'>
+          <p>Price :20.000 IDR</p>
+        </div>
       </div>
     </div>
 
@@ -132,8 +159,8 @@ VARIOUS PRODUCTS AND SOLUTIONS:</h2>
 
     <div style={{marginTop : "20px",display : "flex",flexDirection:"column",alignItems:"center" ,justifyContent:"center",alignItems : "center" }}>
      <div className='p-5 shadow-2xl' style={{ width:"80%",background:"linear-gradient(to right,white,skyblue)" }}>
-      <h2 className=' text-2xl' style={{ textAlign:"center" }}>INQUIRY OF OUR PRODUCTS & SERVICES
-Our Support Team Member Will Be Ready to Help You</h2>
+      <h2 className=' text-2xl' style={{ textAlign:"center" }}>INQUIRY OF OUR PRODUCTS & SERVICES</h2>
+      <h2 className=' text-2xl text-center'>Our Support Team Member Will Be Ready to Help You</h2>
 <div className=' flex-col lg:flex-row mt-4' style={{display:"flex",alignItems:"center" ,justifyContent:"center"}}>
   <p>CONTACT OUR HOTLINE</p>
   <div className='item'>
@@ -152,7 +179,7 @@ Our Support Team Member Will Be Ready to Help You</h2>
     </div>
 
     <div style={{ marginTop : "20px",display : "flex",flexDirection:"column",alignItems:"center" ,justifyContent:"center",alignItems : "center" }}>
-    <h4 style={{ textDecoration:"underline",cursor : "pointer" }}>Send Email</h4>
+    <a href="mailto:timotius_albert@yahoo.com" className='hover:underline cursor-pointer'>Send Email </a>
     </div>
 
     <div style={{ marginTop : "20px",display : "flex",flexDirection:"column",alignItems:"center" ,justifyContent:"center" }}>
